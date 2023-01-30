@@ -106,4 +106,4 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias melee="~/MELEE/Slippi-Launcher-2.7.0-x86_64.AppImage > /dev/null %"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias ytb="python3 -m yt_dlp"
+
