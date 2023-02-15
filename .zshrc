@@ -108,7 +108,6 @@ alias melee="$HOME/MELEE/Slippi* > /dev/null %"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias py='python3'
 alias wa_vid='f(){ffmpeg -i "$@" -vcodec libx264 output.mp4; unset -f f;}; f'
-alias icat='kitty + kitten icat'
 
 declare -A pomo_options
 pomo_options["work"]="45"
