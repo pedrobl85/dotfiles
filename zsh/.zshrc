@@ -1,0 +1,1 @@
+/home/pops/.zshrc
