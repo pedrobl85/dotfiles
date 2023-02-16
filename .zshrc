@@ -119,7 +119,7 @@ pomodoro () {
   val=$1
   echo $val 
   timer ${pomo_options["$val"]}m
-  spd-say "'$val' session done"
+  spd-say "'$val' session done" -r 30 -i -40
   fi
 }
 
