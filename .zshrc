@@ -71,7 +71,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+zstyle ':omz:plugins:nvm' lazy yes
 plugins=(
+    nvm
 	fzf
 	git
 	aliases)
@@ -110,22 +112,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias py='python3'
 alias wa_vid='f(){ffmpeg -i "$@" -vcodec libx264 output.mp4; unset -f f;}; f'
 
-declare -A pomo_options
-pomo_options["work"]="45"
-pomo_options["break"]="10"
 
-pomodoro () {
-  if [ -n "$1" -a -n "${pomo_options["$1"]}" ]; then
-  val=$1
-  echo $val 
-  timer ${pomo_options["$val"]}m
-  spd-say "'$val' session done" -r 30 -i -40
-  fi
-}
-
-alias wo="pomodoro 'work'"
-alias br="pomodoro 'break'"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
