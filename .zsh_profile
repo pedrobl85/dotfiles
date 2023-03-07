@@ -15,8 +15,8 @@ waifu() {
 }
 
 declare -A pomo_options
-pomo_options["work"]="45"
-pomo_options["break"]="10"
+pomo_options["work"]="30"
+pomo_options["break"]="7"
 
 pomodoro () {
   if [ -n "$1" -a -n "${pomo_options["$1"]}" ]; then
