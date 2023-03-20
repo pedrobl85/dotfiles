@@ -28,7 +28,6 @@ return require('packer').startup(function(use)
     use("mfussenegger/nvim-dap")
     use("mfussenegger/nvim-dap-python")
     use {"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
-    use {'romgrk/barbar.nvim', requires = 'nvim-tree/nvim-web-devicons'}
     use { "catppuccin/nvim", as = "catppuccin" }
     use ('lewis6991/gitsigns.nvim')
     use ('feline-nvim/feline.nvim')
