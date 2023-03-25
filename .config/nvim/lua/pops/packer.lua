@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use ('lewis6991/gitsigns.nvim')
     use ('nvim-lualine/lualine.nvim')
+    use ("jay-babu/mason-nvim-dap.nvim")
 
     use 'nvim-tree/nvim-web-devicons'
 	use {
