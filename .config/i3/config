@@ -19,7 +19,7 @@ set $mod Mod4
 font pango:monospace 15px
 
 # Wallpaper setting
-feh --bg-scale ~/Downloads/wp10481598-ikiru-wallpapers.jpg   
+exec --no-startup-id feh --bg-scale ~/Downloads/wp10481598-ikiru-wallpapers.jpg   
 
 
 # GET DEM BORDERS OUT OF HEREc:w
