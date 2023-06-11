@@ -30,8 +30,10 @@ pomodoro () {
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 
+export PATH=$PATH:/usr/local/go/bin
 
 bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^g "ranger\n"
 
 setxkbmap -option caps:escape 
 
