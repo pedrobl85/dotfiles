@@ -71,7 +71,6 @@ class copy_clipboard_uri(Command):
 
     Simple command to copy file URI to clipboard as text/uri-list using xclip
     (Mostly for drag-and-drop web applications)
-    
     """
 
     # The execute method is called when you run this command in ranger.
@@ -92,8 +91,8 @@ class copy_clipboard_uri(Command):
         run(['xclip', '-i', '-selection', 'clipboard', '-t', 'text/uri-list'],
             input=out, check=True)
 
-        self.fm.notify("Copied " +target_filename +" URI to clipboard", bad=True)
-        
+        self.fm.notify("Copied " + target_filename +
+                       " URI to clipboard")
 
     def tab(self, tabnum):
         return self._tab_directory_content()

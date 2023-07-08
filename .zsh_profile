@@ -29,8 +29,10 @@ pomodoro () {
 
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
+alias mathinit="cp $HOME/Documents/Estudos/notas/latex_template/*.tex ."
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/texlive/2023/bin/x86_64-linux
 
 bindkey -s ^f "tmux-sessionizer\n"
 bindkey -s ^g "ranger\n"
