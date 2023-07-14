@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
     use('nvim-lualine/lualine.nvim')
     use("jay-babu/mason-nvim-dap.nvim")
 
-    use ('nvim-tree/nvim-web-devicons')
+    use('nvim-tree/nvim-web-devicons')
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -72,6 +72,7 @@ return require('packer').startup(function(use)
     })
 
     use('lervag/vimtex')
+    use('francoiscabrol/ranger.vim')
 
     -- use("jose-elias-alvarez/null-ls.nvim")
     -- use("MunifTanjim/prettier.nvim")
