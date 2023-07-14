@@ -16,6 +16,7 @@ lsp.configure('lua_ls', {
         }
     }
 })
+
 require('lspconfig').quick_lint_js.setup({
     filetypes = { "javascript", "javascriptreact" }
 })
@@ -27,11 +28,16 @@ require('lspconfig').emmet_language_server.setup({
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
+
+require('luasnip.loaders.from_vscode').lazy_load()
+
 local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
     ["<C-b>"] = cmp.mapping.complete(),
+    ["<Tab>"] = lsp.cmp_action().luasnip_supertab(),
+    ["<S-Tab>"] = lsp.cmp_action().luasnip_shift_supertab()
 })
 
 lsp.setup_nvim_cmp({
