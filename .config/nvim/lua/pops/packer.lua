@@ -31,7 +31,6 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use('lewis6991/gitsigns.nvim')
     use('nvim-lualine/lualine.nvim')
-    use("jay-babu/mason-nvim-dap.nvim")
 
     use('nvim-tree/nvim-web-devicons')
     use {
@@ -42,6 +41,7 @@ return require('packer').startup(function(use)
             { 'neovim/nvim-lspconfig' },             -- Required
             { 'williamboman/mason.nvim' },           -- Optional
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+            { "jay-babu/mason-nvim-dap.nvim" },      --User
 
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },         -- Required
