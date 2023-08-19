@@ -205,7 +205,7 @@ bar {
 
 # Screenshots
 bindsym Shift+Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/$(date)"
-bindsym Shift+Mod1+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date)"
+bindsym $mod+Shift+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date)"
 bindsym Shift+Ctrl+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshots/$(date)"
 
 ## Clipboard Screenshots
