@@ -73,6 +73,7 @@ return require('packer').startup(function(use)
 
     use('lervag/vimtex')
     use('francoiscabrol/ranger.vim')
+    use('lambdalisue/suda.vim')
 
     -- use("jose-elias-alvarez/null-ls.nvim")
     -- use("MunifTanjim/prettier.nvim")
